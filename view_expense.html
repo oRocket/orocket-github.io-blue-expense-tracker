@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Expense - Expense Tracker</title>
+    <link rel="stylesheet" href="/css/view_expense.css">
+    <link rel="stylesheet" href="/css/index.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="brand">Blue Expense Tracker</div>
+        <nav>
+            <div class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#active">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="add_expense.html">Add Expense</a></li>
+                <li><a href="edit_expense.html">Edit Expense</a></li>
+                <li><a href="view_expense.html">View Expense</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>$50</td>
+                        <td>Groceries</td>
+                        <td>2024-07-06</td>
+                        <td>
+                            <a href="edit_expense.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>$30</td>
+                        <td>Transport</td>
+                        <td>2024-07-05</td>
+                        <td>
+                            <a href="edit_expense.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>$70</td>
+                        <td>Food</td>
+                        <td>2024-07-04</td>
+                        <td>
+                            <a href="edit_expense.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>$60</td>
+                        <td>Clothing</td>
+                        <td>2024-07-03</td>
+                        <td>
+                            <a href="edit_expense.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>$20</td>
+                        <td>Swimming Lessons</td>
+                        <td>2024-07-02</td>
+                        <td>
+                            <a href="edit_expense.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>$30</td>
+                        <td>Shoes</td>
+                        <td>2024-07-01</td>
+                        <td>
+                            <a href="edit_expense.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>    
+    <footer>
+        <p>&copy; 2024 Blue Expense Tracker. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Blue Expense Tracker</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/index.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="brand">Blue Expense Tracker</div>
+        <nav>
+            <div class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#active">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="add_expense.html">Add Expense</a></li>
+                <li><a href="edit_expense.html">Edit Expense</a></li>
+                <li><a href="view_expense.html">View Expense</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="login-page">
+        <div class="login-hero">
+            <div class="login-form-container">
+                <h1>Login</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blue Expense Tracker. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

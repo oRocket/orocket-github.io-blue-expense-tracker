@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense - Expense Tracker</title>
+    <link rel="stylesheet" href="/css/add_expense.css">
+    <link rel="stylesheet" href="/css/index.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="brand">Blue Expense Tracker</div>
+        <nav>
+            <div class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#active">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="add_expense.html">Add Expense</a></li>
+                <li><a href="edit_expense.html">Edit Expense</a></li>
+                <li><a href="view_expense.html">View Expense</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="edit_expense-page">
+        <div class="edit_expense-hero">
+            <div class="edit_expense-form-container">
+                <h1>Edit Expense</h1>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="amount">Amount:</label>
+                        <input type="number" id="amount" name="amount" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <input type="text" id="category" name="category" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div>
+                        <button type="submit">Save Change</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blue Expense Tracker. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
